@@ -24,11 +24,11 @@
      *      
      *      createCollectable(type, x, y, gravity, bounce);
      * 
-     *      type: The type of the collectable, use the type Object above.
-     *      x: The x coordineate for the collectable.
-     *      y: The y coordineate for the collectable.
-     *      gravity: OPTIONAL The gravitational pull on the collectable.
-     *      bounce: OPTIONAL A factor effecting how much the collectable will bounce off platforms, etc.
+     *      type: The type of the collectable, use the type Object above. (db, kennedi, grace, steve, max)
+     *      x: The x coordineate for the collectable (0 - 900).
+     *      y: The y coordineate for the collectable (0 - 700).
+     *      gravity: OPTIONAL The gravitational pull on the collectable (0 - 10).
+     *      bounce: OPTIONAL A factor effecting how much the collectable will bounce off platforms, etc. (0 - 1)
      */ 
     function init(game) {
         let createCollectable = collectable.create;
@@ -38,6 +38,7 @@
         
         // example: 
         createCollectable(type.steve, 200, 170, 6, 0.7);
+     
         
         
         
